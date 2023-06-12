@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Management</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Object Management</h1>
+    <form id="objectForm">
+      <label for="name">Object Name:</label>
+      <input type="text" id="name" required /><br /><br />
+
+      <label for="expiration">Expiration Date:</label>
+      <input type="date" id="expiration" required /><br /><br />
+
+      <label for="type">Object Type:</label>
+      <input type="text" id="type" required /><br /><br />
+
+      <label for="conditions">Conditions:</label>
+      <textarea id="conditions" required></textarea><br /><br />
+
+      <label for="owner">Owner:</label>
+      <input type="text" id="owner" required /><br /><br />
+
+      <label for="description">Description:</label>
+      <textarea id="description" required></textarea><br /><br />
+
+      <label for="status">Status:</label>
+      <input type="checkbox" id="status" /><br /><br />
+
+      <button type="button" onclick="saveObject()">Submit</button>
+    </form>
+
+    <div id="objectContainer"></div>
+  </body>
+</html>
